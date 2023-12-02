@@ -16,7 +16,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
-      dfdf
+      
     </main>
   );
 }
