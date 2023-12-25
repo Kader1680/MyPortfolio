@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  urlGithub,
+  demo,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,6 +48,10 @@ export default function Project({
               </li>
             ))}
           </ul>
+        <div className=" mt-4 flex bg-gray-300  p-3 w-52 justify-between">
+          <div className=" bg-green-200 p-1 rounded"><a href={urlGithub}>Code Source</a></div>
+          <div className=" bg-yellow-200 ps-3 pe-3 pt-1 pb-1 rounded"><a href={demo}>Demo</a></div>
+        </div>
         </div>
 
         <Image

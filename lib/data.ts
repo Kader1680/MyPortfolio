@@ -8,6 +8,7 @@ import L from "@/public/landy.png";
 import PH from "@/public/PH.png";
 import k from "@/public/k.png";
 import p from "@/public/p.png";
+import todo from "@/public/todo.png";
 
 export const links = [
   {
@@ -68,20 +69,45 @@ export const projectsData = [
       "you can create your own blog and edit or delelte just your blog, also i add feature to delete all blog",
     tags: ["Php", "Laravel", "Mysql", "Bootstrap 5", "Javascript"],
     imageUrl: laravel,
+    urlGithub: "https://github.com/Kader1680/fisrt-laravel-app",
+    demo: "",
   },
+  
   {
-    title: "Start React Website",
+    title: "Todo List Reactjs",
     description:
-      "you can swip form English to Arabic that will change content to current langage",
+      "you can add, remove and update task",
     tags: ["React Js", "Bootstrap", "Html Css", "Javascript"],
-    imageUrl: L,
+    imageUrl: todo,
+    urlGithub: "https://github.com/Kader1680/CRUD-APP-REACT/deployments/github-pages",
+    demo: "https://kader1680.github.io/CRUD-APP-REACT/",
   },
   {
-    title: "Php Mysql Crud Application",
+    title: "Smal socila media website php",
+    description:
+      "you can login or register, create profile, add friend and upload picter",
+    tags: ["php", "mysql", "Html Css", "Javascript", "sql"],
+    imageUrl: L,
+    urlGithub: "https://github.com/Kader1680/Social-Media-Website",
+    demo: "",
+  },
+  {
+    title: "Landing Page",
+    description:
+      "landing page with diffrent langage ",
+    tags: ["php", "mysql", "Html Css", "Javascript", "sql"],
+    imageUrl: L,
+    urlGithub: "https://github.com/Kader1680/Social-Media-Website",
+    demo: "",
+  },
+  {
+    title: "Stock Medicament Php Mysql",
     description:
       "i used pure php with mysql without use any libray or framework, you can add new city or delete, update",
     tags: ["Php", "Mysql", "SQL", "Bootstrap", "Html css Javascript"],
     imageUrl: PH,
+    urlGithub: "https://github.com/Kader1680/Stock_Medicament",
+    demo: "",
   },
   {
     title: "IT Employer C++",
@@ -89,6 +115,8 @@ export const projectsData = [
       "choise you role as employer or product ",
     tags: ["C++", "Object Oriented Programming"],
     imageUrl: k,
+    urlGithub: "https://github.com/Kader1680/System-It-Member",
+    demo: "",
   },
   {
     title: "Old Portflio Website",
@@ -96,6 +124,8 @@ export const projectsData = [
       "My old portflio website using react js it's responsive design",
     tags: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
     imageUrl: p,
+    urlGithub: "https://github.com/Kader1680/Potfolio-Website/tree/main/app",
+    demo: "https://kader1680.github.io/Potfolio-Website/",
   }
   
 ] as const;
