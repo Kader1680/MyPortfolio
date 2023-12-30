@@ -9,6 +9,11 @@ import PH from "@/public/PH.png";
 import k from "@/public/k.png";
 import p from "@/public/p.png";
 import todo from "@/public/todo.png";
+import v from "@/public/valleu.png";
+import m from "@/public/m.png";
+import s from "@/public/s.png";
+import a from "@/public/1.png";
+import auth from "@/public/auth.png";
 
 export const links = [
   {
@@ -51,18 +56,19 @@ export const experiencesData = [
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2022",
-  },
-  // {
-  //   title: "Full-Stack Developer",
-  //   location: "Houston, TX",
-  //   description:
-  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-  //   icon: React.createElement(FaReact),
-  //   date: "2021 - present",
-  // },
+  }
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Authentication using Jwt Laravel",
+    description:
+      "you can register or loign and will refirect to home page that will display you username and email",
+    tags: ["Php", "Laravel", "Mysql", "JWT", "Javascript"],
+    imageUrl: auth,
+    urlGithub: "https://github.com/Kader1680/Laravel-Authentication",
+    demo: "http://authen.byethost10.com/?fbclid=IwAR0327M2jDFfCW8t3D58MVBoo83FIuVvYoYAIMP2MyCt0P41rKcUAxeTtDU",
+  },
   {
     title: "Blog Post Laravel",
     description:
@@ -87,7 +93,7 @@ export const projectsData = [
     description:
       "you can login or register, create profile, add friend and upload picter",
     tags: ["php", "mysql", "Html Css", "Javascript", "sql"],
-    imageUrl: L,
+    imageUrl: v,
     urlGithub: "https://github.com/Kader1680/Social-Media-Website",
     demo: "",
   },
@@ -128,6 +134,46 @@ export const projectsData = [
     demo: "https://kader1680.github.io/Potfolio-Website/",
   }
   
+
+
+  ,
+  {
+    title: "Static Store website",
+    description:
+      "multipage website static",
+    tags: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl: s,
+    urlGithub: "https://github.com/Kader1680/Online-Store",
+    demo: "https://kader1680.github.io/Online-Store/",
+  }
+
+
+
+
+  ,
+  {
+    title: "Medical Website",
+    description:
+      "mutipages website with more 3 section and form validation",
+    tags: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl: m,
+    urlGithub: "https://github.com/Kader1680/Newlife-with-scss",
+    demo: "https://kader1680.github.io/Newlife-with-scss/",
+  }
+
+
+  ,
+  {
+    title: "CRUD APP using MYSQL",
+    description:
+      "mutipages website with more 3 section and form validation",
+    tags: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl: a,
+    urlGithub: "https://github.com/Kader1680/Newlife-with-scss",
+    demo: "https://kader1680.github.io/Newlife-with-scss/",
+  }
+
+
 ] as const;
 
 export const skillsData = [
