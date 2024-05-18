@@ -30,7 +30,7 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image style={{ width:"100px", height:"100px" }}
+            <Image style={{ width:"200px", height:"200px" }}
               src={p}
               alt="Abdelkader Ould Hennia"
               
