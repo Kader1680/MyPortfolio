@@ -43,19 +43,39 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+
   {
-    title: "Open Source Contributor",
+    title: "Web Developer Fiverr Freelancer",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
-    title: "Front-End Developer Fiverr Freelancer",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Specializing in building sleek static pages with React.js, ensuring fast load times and responsive designs. Expert in troubleshooting and debugging existing websites to enhance functionality. Skilled in converting PSD/Figma designs into fully functional, cross-device websites using HTML, CSS, and JavaScript.",
     icon: React.createElement(CgWorkAlt),
     date: "2022",
+  }
+  ,
+  {
+    title: "Backend Intrenship at Inter2grow",
+    description:
+      "Developed a Personal Blog API with authentication, handling CRUD operations for articles. Built a 3-page website using Blade for login, signup, and profile management. Created a Proxy Server to handle client API requests, processing URLs, headers, and body data, and returning the appropriate responses.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  }
+
+  ,
+  {
+    title: "Junior Backend Developer AT Taki Company",
+    description:
+      "Developed scalable RESTful APIs with NestJS and JavaScript, managing MongoDB for performance optimization. Conducted API testing with Postman and Cypress, ensuring functionality and workflow reliability. Created API documentation with Swagger and performed unit and feature testing in Laravel to maintain high code quality.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  }
+
+  ,
+  {
+    title: "Full Stack Developer Speciliza on Backend Service",
+    description:
+      "  Developed scalable RESTful APIs with NestJS and JavaScript, managing MongoDB for optimized performance. Conducted thorough API and end-to-end testing with Postman and Cypress, ensuring functionality and workflow reliability. Created detailed API documentation with Swagger and performed unit and feature testing in Laravel to maintain code quality.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
   }
 ] as const;
 

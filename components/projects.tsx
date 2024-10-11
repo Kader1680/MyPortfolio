@@ -1,24 +1,162 @@
-"use client";
+import React from 'react';
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
-import Project from "./project";
-import { useSectionInView } from "@/lib/hooks";
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl: string;
+  imageUrl: string;
+}
 
-export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+const projects: Project[] = [
+  {
+    title: "Authentication using Jwt Laravel",
+    description: "You can register or login and will be redirected to a homepage displaying your username and email.",
+    technologies: ["PHP", "Laravel", "MySQL", "JWT", "JavaScript"],
+    imageUrl: "/auth.png",
+    githubUrl: "https://github.com/Kader1680/Laravel-Authentication",
+    liveUrl: "http://authen.byethost10.com/?fbclid=IwAR0327M2jDFfCW8t3D58MVBoo83FIuVvYoYAIMP2MyCt0P41rKcUAxeTtDU",
+  },
+  {
+    title: "Blog Post Laravel",
+    description: "You can create your own blog, edit or delete your blog. Also, a feature to delete all blogs is added.",
+    technologies: ["PHP", "Laravel", "MySQL", "Bootstrap 5", "JavaScript"],
+    imageUrl: "/5.png",
+    githubUrl: "https://github.com/Kader1680/fisrt-laravel-app",
+    liveUrl: "",
+  },
+  {
+    title: "Todo List Reactjs",
+    description: "You can add, remove, and update tasks.",
+    technologies: ["React", "Bootstrap", "HTML", "CSS", "JavaScript"],
+    imageUrl: "/todo.png",
+    githubUrl: "https://github.com/Kader1680/CRUD-APP-REACT",
+    liveUrl: "https://kader1680.github.io/CRUD-APP-REACT/",
+  },
+  {
+    title: "Small Social Media Website PHP",
+    description: "Login or register, create a profile, add friends, and upload pictures.",
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    imageUrl: "/valleu.png",
+    githubUrl: "https://github.com/Kader1680/Social-Media-Website",
+    liveUrl: "",
+  },
+  {
+    title: "Landing Page",
+    description: "A landing page with different languages.",
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    imageUrl: "/landy.png",
+    githubUrl: "https://github.com/Kader1680/Social-Media-Website",
+    liveUrl: "",
+  } 
 
+  ,
+   
+  {
+    title: "Stock Medicament Php Mysql",
+    description:
+      "i used pure php with mysql without use any libray or framework, you can add new city or delete, update",
+    technologies: ["Php", "Mysql", "SQL", "Bootstrap", "Html css Javascript"],
+    imageUrl:  "/PH.png",
+    githubUrl: "https://github.com/Kader1680/Stock_Medicament",
+    liveUrl: "",
+  },
+  {
+    title: "IT Employer C++",
+    description:
+      "choise you role as employer or product ",
+    technologies: ["C++", "Object Oriented Programming"],
+    imageUrl:  "/k.png",
+    githubUrl: "https://github.com/Kader1680/System-It-Member",
+    liveUrl: "",
+  },
+  {
+    title: "Old Portflio Website",
+    description:
+      "My old portflio website using react js it's responsive design",
+    technologies: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl:  "/p.png",
+    githubUrl: "https://github.com/Kader1680/Potfolio-Website/tree/main/app",
+    liveUrl: "https://kader1680.github.io/Potfolio-Website/",
+  }
+  
+
+
+  ,
+  {
+    title: "Static Store website",
+    description:
+      "multipage website static",
+    technologies: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl:  "/s.png",
+    githubUrl: "https://github.com/Kader1680/Online-Store",
+    liveUrl: "https://kader1680.github.io/Online-Store/",
+  }
+
+
+
+
+  ,
+  {
+    title: "Medical Website",
+    description:
+      "mutipages website with more 3 section and form validation",
+      technologies: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl:  "/m.png",
+    githubUrl: "https://github.com/Kader1680/Newlife-with-scss",
+    liveUrl: "https://kader1680.github.io/Newlife-with-scss/",
+  }
+
+
+  ,
+  {
+    title: "CRUD APP using MYSQL",
+    description:
+      "mutipages website with more 3 section and form validation",
+    technologies: ["React", "Html", "Css", "JavzScipt", "Bootstrap"],
+    imageUrl:  "/1.png",
+    githubUrl: "https://github.com/Kader1680/Newlife-with-scss",
+    liveUrl: "https://kader1680.github.io/Newlife-with-scss/",
+  }
+];
+
+const ProjectsSection: React.FC = () => {
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
-      <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
+    <section id="projects" className="py-16 bg-gray-900">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-white text-center mb-8">My Projects</h2>
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+              <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, i) => (
+                    <span key={i} className="text-xs text-gray-200 bg-gray-700 px-2 py-1 rounded">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between items-center mt-4">
+                  <a href={project.githubUrl} target="_blank" className="text-gray-400 hover:text-white">
+                    <img width={30} src='/github.png' alt="GitHub" />
+                  </a>
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} target="_blank" className="text-gray-400 hover:text-white">
+                      <img width={30} src='/domain.png' alt="Live liveUrl" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default ProjectsSection;
