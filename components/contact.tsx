@@ -26,7 +26,7 @@ export default function Contact() {
       <motion.section
       id="contact"
      
-      className="mb-0 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-0 sm:mb-28   text-center"
    
      
     ></motion.section>
@@ -38,7 +38,7 @@ export default function Contact() {
 
          
 
-<div className=" flex items-center gap-2 mb-5">
+<div className=" md:flex items-center gap-2 mb-5">
 
 
   
@@ -92,7 +92,7 @@ export default function Contact() {
 
     </div>
 
-    <div className=" w-full" style={{ background:
+    <div className="  w-full" style={{ background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
@@ -107,7 +107,7 @@ export default function Contact() {
 </div>
 
     <SectionHeading >Follow Me</SectionHeading>
-    <div className=" flex items-center gap-2">
+    <div className=" md:flex  items-center gap-2">
 
 
   

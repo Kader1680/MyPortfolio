@@ -18,10 +18,10 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[110rem] text-center sm:mb-0 scroll-mt-[100rem]"
      >
       
-      <div className=" grid grid-cols-4">
+      <div className=" md:grid grid-cols-4 items-center">
 
       
       <div className="flex items-center justify-center col-span-1 k">
@@ -70,13 +70,15 @@ export default function Intro() {
         <span className="font-bold">Full-Stack Software Engineer Specializing in Backend Development, Passionate About Building & Maintaining Scalable, Secure Websites</span>
       </motion.h1>
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex  flex-col sm:flex-row items-center justify-start ms-5 gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
         }}
       >
+
+
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
@@ -85,7 +87,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contact me here 
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
