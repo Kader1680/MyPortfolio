@@ -4,158 +4,99 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
-import Link from "next/link";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
 import { useTheme } from "@/context/theme-context";
+
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-  // const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
 
+  const links = [
+    {
+      href: "https://www.linkedin.com/in/abdelkader-ould-hennia/",
+      label: "LinkedIn",
+    },
+    {
+      href: "mailto:ouldhenniabaghdad@gmail.com",
+      label: "Email",
+    },
+    {
+      href: "https://web.facebook.com/baghdad.ouldhennia.9",
+      label: "Facebook",
+    },
+    {
+      href: "https://www.fiverr.com/ouldhenniaabdel?up_rollout=true",
+      label: "Fiverr",
+    },
+    {
+      href: "https://wa.me/+213549891600", // Replace with your WhatsApp link
+      label: "WhatsApp",
+    },
+  ];
+
+  const followLinks = [
+    {
+      href: "https://www.youtube.com/@Bloomaster1792",
+      label: "YouTube",
+    },
+    {
+      href: "https://github.com/Kader1680",
+      label: "GitHub",
+    },
+    {
+      href: "https://dev.to/clever",
+      label: "DEVTo",
+    },
+  ];
+
   return (
-    
-    <div  className="row">
-      <motion.section
-      id="contact"
-     
-      className="mb-0 sm:mb-28   text-center"
-   
-     
-    ></motion.section>
-        <SectionHeading>Contact Me</SectionHeading>
+    <motion.section id="contact" ref={ref} className="mb-0 sm:mb-28 text-center">
+      <SectionHeading ><p className="text-[#009658]">Contact Me</p></SectionHeading>
+      <div className="grid md:grid-cols-2 gap-4 mb-8">
+        {links.map((link, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105"
+            style={{
+              background:
+                theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <a
+              className="text-lg font-semibold text-[#36bd63] hover:text-[#36bdb6]"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link.href}
+            >
+              {link.label}
+            </a>
+          </div>
+        ))}
+      </div>
 
- 
-
-
-
-         
-
-<div className=" md:flex items-center gap-2 mb-5">
-
-
-  
-<div className=" w-full" style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}>
-         
-          <a target="_blank" href="https://www.linkedin.com/in/abdelkader-ould-hennia/">Linkdin</a>
-
-    </div>
-
-    <div className=" w-full  "  style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}
-                 
-                >
-          <a target="_blank" href="mailto:ouldhenniabaghdad@gmail.com">Email</a>
-
-                   
-
-    </div>
-
-    <div className=" w-full  "  style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}
-                 
-                >
-          <a target="_blank" href="https://web.facebook.com/baghdad.ouldhennia.9">Facebook</a>
-
-                   
-
-    </div>
-    <div className=" w-full" style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}>
-
-                   
-<a target="_blank" href="https://www.fiverr.com/ouldhenniaabdel?up_rollout=true">Fiverr</a>
-
-    </div>
-
-    <div className="  w-full" style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}>
-
-                   
-<a target="_blank" href="https://www.linkedin.com/in/abdelkader-ould-hennia/">whatsapp</a>
-
-    </div>
-
-</div>
-
-    <SectionHeading >Follow Me</SectionHeading>
-    <div className=" md:flex  items-center gap-2">
-
-
-  
-<div className=" w-full" style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}>
-         
-          <a target="_blank" href="https://www.youtube.com/@Bloomaster1792">Youtube</a>
-
-    </div>
-
-    <div className=" w-full  "  style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                 textAlign: "center",
-                padding: "1.3rem 2rem",}}
-                 
-                >
-          <a target="_blank" href="https://github.com/Kader1680">Github</a>
-
-                   
-
-    </div>
-    <div className=" w-full  " style={{ background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "center",
-                padding: "1.3rem 2rem",}}>
-
-                   
-       <a target="_blank" href="https://dev.to/clever">DEVTo</a>
-
-    </div>
-
- 
-
-
-   
-
-</div>
-
-
-        
-    </div>
+      <SectionHeading>Follow Me</SectionHeading>
+      <div className="grid md:grid-cols-3 gap-4">
+        {followLinks.map((link, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105"
+            style={{
+              background:
+                theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <a
+              className="text-lg font-semibold text-[#36bd63]  hover:text-[#36bdb6]"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link.href}
+            >
+              {link.label}
+            </a>
+          </div>
+        ))}
+      </div>
+    </motion.section>
   );
 }

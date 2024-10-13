@@ -11,6 +11,30 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Ecommerce Shopping Platformm NEXTjs Laravel",
+    description: "change langage from english to arabic, CRUD product, also CRUD Item, CRUD cart",
+    technologies: ["PHP", "Laravel", "MySQL", "JWT", "Nextjs", "Tailwaind"],
+    imageUrl: "/uae.png",
+    githubUrl: "https://github.com/Kader1680/ecommerce_Test",
+    liveUrl: "",
+  },
+  {
+    title: "Toring Full Application Question/Answer",
+    description: "CRUD for Question also upload pics from your devise to profile page, including dashboard for admin user",
+    technologies: ["PHP", "Laravel", "MySQL", "JWT", "JavaScript", "Bootstrap 5"],
+    imageUrl: "/toring.png",
+    githubUrl: "https://github.com/Kader1680/Toring-Full-Web-Application",
+    liveUrl: "",
+  },
+  {
+    title: "Sopping Mark Ecommerce Website",
+    description: "Authentication system with CRUD Operation for the product also filter prodcut by category",
+    technologies: ["PHP", "Laravel", "MySQL", "JWT", "JavaScript"],
+    imageUrl: "/ecom.png",
+    githubUrl: "https://github.com/Kader1680/Ecommerce-Website-Laravel/tree/main",
+    liveUrl: "",
+  },
+  {
     title: "Authentication using Jwt Laravel",
     description: "You can register or login and will be redirected to a homepage displaying your username and email.",
     technologies: ["PHP", "Laravel", "MySQL", "JWT", "JavaScript"],
@@ -125,7 +149,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="py-16 bg-red">
       <div className="  mx-auto px-6">
-        <h2 className="text-4xl font-bold text-white text-center mb-8">My Projects</h2>
+        <h2 className="text-4xl font-bold text-[#009658] text-center mb-8">My Projects</h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div key={index} className="  rounded-lg shadow-lg overflow-hidden">

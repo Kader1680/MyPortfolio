@@ -11,34 +11,61 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28  text-center leading-8 sm:mb-40 scroll-mt-28"
+      id="about"
+      className="mb-28 text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
-      id="about"
+      transition={{ delay: 0.175, duration: 0.6 }}
     >
-      <SectionHeading>About me</SectionHeading>
-     
+      <SectionHeading>About Me</SectionHeading>
 
-     <div className=" md:flex items-center   ">
+      <div className="md:flex md:items-center md:justify-between gap-12 mt-10">
+        {/* Text Content */}
+        <motion.div
+          className="md:w-1/2 text-start space-y-6"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+        >
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
+            I am a software engineer specializing in backend development with
+            the capability to handle front-end work when needed. I excel at
+            solving complex problems, debugging, and writing secure, clean, and
+            well-documented code. Adhering to <strong>SOLID</strong> principles, I take pride in delivering maintainable, high-quality solutions.
+          </p>
 
-       
-     <div>
-      <p className="mb-3 text-sm md:text-start ">
-      software engineer specializing in backend development with the capability to handle front-end work when needed. I excel at solving complex problems, debugging, and writing secure, clean, and well-documented code. Adhering to SOLID principles, I take pride in delivering maintainable, high-quality solutions.
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
+            Self-taught in computer science, I possess a solid understanding of
+            essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
+          </p>
 
-I am self-taught in computer science and have a solid understanding of essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. <br>
-</br> My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
+            Beyond technical skills, I am a strong team player with excellent
+            communication abilities. I work effectively within teams, ensuring
+            smooth collaboration. I place significant emphasis on testing to ensure the reliability of the software I build.
+          </p>
 
-Beyond technical skills, 
-<br></br>I am a strong team player with excellent communication abilities. I work effectively within teams, ensuring that everyone is on the same page, and I thrive in environments where collaboration is key to success. I also place a significant emphasis on testing to ensure the reliability of the software I build.
-      So <br></br>I'm always seeking to have an opportunity that matches my skills, to make the best use of all what I have learned.
-      </p>
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
+            I am always seeking opportunities that align with my skills to make the best use of everything I’ve learned.
+          </p>
+        </motion.div>
+
+        {/* Image */}
+        <motion.div
+          className="md:w-1/2 mt-8 md:mt-0"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+        >
+          <img
+            className="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+            src="/me.png"
+            alt="Abdelkader"
+            width={700}
+            height={700}
+          />
+        </motion.div>
       </div>
-      <div>
-          <img className=" rounded-xl" width={ 700} height={ 700}  src="/me.png" />
-      </div>
-     </div>
     </motion.section>
   );
 }
