@@ -141,12 +141,17 @@ const ProjectsSection: React.FC = () => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center mt-4">
-                  <a href={project.githubUrl} target="_blank" className="text-gray-400 hover:text-white">
+                  <a href={project.githubUrl} target="_blank" className="flex items-center gap-3 text-gray-400 hover:text-white">
+                    
+                   
                     <img width={30} src='/github.png' alt="GitHub" />
+                    <p>Source Code</p>
                   </a>
                   {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" className="text-gray-400 hover:text-white">
+                    <a href={project.liveUrl} target="_blank" className="flex items-center gap-3 text-gray-400 hover:text-white">
+                      
                       <img width={30} src='/domain.png' alt="Live liveUrl" />
+                      <p>Demo Live</p>
                     </a>
                   )}
                 </div>
