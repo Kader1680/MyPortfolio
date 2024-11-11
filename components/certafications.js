@@ -10,6 +10,8 @@ const certificatesData = [
   { id: 3, title: 'Javascript Intermediare - React', imgSrc: '/js.png' },
   { id: 3, title: 'Web Fundamentals - React', imgSrc: '/web.png' },
   { id: 3, title: 'Internship Backedn Web', imgSrc: '/inter.png' },
+  { id: 3, title: 'Problem Solving Basic Harckerrank', imgSrc: '/problemSolving.jfif' },
+  
 ];
 
 const Certifications = () => {
