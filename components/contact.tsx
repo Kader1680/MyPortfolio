@@ -19,10 +19,7 @@ export default function Contact() {
       href: "mailto:ouldhenniabaghdad@gmail.com",
       label: "Email",
     },
-    {
-      href: "https://web.facebook.com/baghdad.ouldhennia.9",
-      label: "Facebook",
-    },
+    
     {
       href: "https://www.fiverr.com/ouldhenniaabdel?up_rollout=true",
       label: "Fiverr",
