@@ -10,6 +10,10 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import p from "../public/profil.png";
+import img1 from "../public/image1.jpg";
+import img2 from "../public/image2.png";
+import img3 from "../public/image3.jpg";
+import img4 from "../public/image4.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -55,54 +59,66 @@ export default function Intro() {
             <br />
             Passionate about building scalable and secure web solutions.
           </motion.h1>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <hr></hr>
+      <h1 style={{fontSize:"28px"}} className="font-bold">Latest Action & News </h1>
+      <hr></hr>
+      <br></br>
+      
 
-          <motion.div
-            className="flex flex-col sm:flex-row items-center justify-start gap-4 px-4 text-lg font-medium"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-          >
-            {/* Contact Button */}
-            <Link
-              href="#contact"
-              className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full hover:bg-gray-950 focus:scale-110 hover:scale-110 active:scale-105 transition"
-              onClick={() => {
-                setActiveSection("Contact");
-                setTimeOfLastClick(Date.now());
-              }}
-            >
-              Contact me here
-              <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-            </Link>
+      <br></br>
 
-            {/* Download CV Button */}
-            <a
-              href="/CV.pdf"
-              download
-              className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-300 dark:bg-white/10"
-            >
-              Download CV
-              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-            </a>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+       
+        <div className="relative group">
+          <Image
+            src={img1}
+            alt="Image 1"
+            className="rounded-lg object-cover w-full h-64 sm:h-80"
+          />
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+            <h1 style={{fontSize:"25px"}} className="text-[#20c300] bg-black p-2 rounded-lg font-semibold text-lg">My Blog On Dev Commuinity</h1>
+          </div>
+        </div>
+        <div className="relative group">
+          <Image
+            src={img2}
+            alt="Image 2"
+            className="rounded-lg object-cover w-full h-64 sm:h-80"
+          />
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+            <h1 style={{fontSize:"25px"}} className="text-[#20c300] bg-black p-2 rounded-lg  font-semibold text-lg">Sharing Information On Linkdin</h1>
+          </div>
+        </div>
+      </div>
 
-            {/* LinkedIn Profile */}
-            <a
-              href="https://www.linkedin.com/in/abdelkader-ould-hennia/"
-              target="_blank"
-              className="bg-white p-4 text-gray-700 hover:text-gray-950 rounded-full hover:scale-110 active:scale-105 transition border border-gray-300 dark:bg-white/10 dark:text-white/60"
-            >
-              <BsLinkedin className="text-xl" />
-            </a>
+      <br></br>
 
-            {/* GitHub Profile */}
-            <a
-              href="https://github.com/Kader1680"
-              target="_blank"
-              className="bg-white p-4 text-gray-700 hover:text-gray-950 rounded-full hover:scale-110 active:scale-105 transition border border-gray-300 dark:bg-white/10 dark:text-white/60"
-            >
-              <FaGithubSquare className="text-2xl" />
-            </a>
-          </motion.div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+       
+        <div className="relative group">
+          <Image
+            src={img3}
+            alt="Image 1"
+            className="rounded-lg object-cover w-full h-64 sm:h-80"
+          />
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+            <h1 style={{fontSize:"25px"}} className="text-[#20c300] bg-black p-2 rounded-lg font-semibold text-lg">Steraming when I Start Coding</h1>
+          </div>
+        </div>
+        <div className="relative group">
+          <Image
+            src={img4}
+            alt="Image 2"
+            className="rounded-lg object-cover w-full h-64 sm:h-80"
+          />
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+            <h1 style={{fontSize:"25px"}} className="text-[#20c300] bg-black p-2 rounded-lg  font-semibold text-lg">Sharing Ticks & Trips About Progamming</h1>
+          </div>
         </div>
       </div>
     </section>
