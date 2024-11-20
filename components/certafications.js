@@ -10,7 +10,7 @@ const certificatesData = [
   { id: 3, title: 'Javascript Intermediare - React', imgSrc: '/js.png' },
   { id: 3, title: 'Web Fundamentals - React', imgSrc: '/web.png' },
   { id: 3, title: 'Internship Backedn Web', imgSrc: '/inter.png' },
-  { id: 3, title: 'Problem Solving Basic Harckerrank', imgSrc: '/problemSolving.jfif' },
+  { id: 3, title: 'Problem Solving Basic Harckerrank', imgSrc: '/problem.png' },
   
 ];
 
@@ -18,8 +18,8 @@ const Certifications = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <div className="bg-white dark:bg-gray-900 py-10">
-      <h2 className="text-center text-3xl font-semibold text-gray-800 dark:text-white mb-8">
+    <div className="bg-white dark:bg-black py-10">
+      <h2 className="text-center text-3xl font-semibold text-[#20c300] dark:text-[#20c300] mb-8">
         My Certifications
       </h2>
 

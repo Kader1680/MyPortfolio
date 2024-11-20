@@ -47,7 +47,7 @@ export default function Contact() {
 
   return (
     <motion.section id="contact" ref={ref} className="mb-0 sm:mb-28 text-center">
-      <SectionHeading ><p className="text-[#009658]">Contact Me</p></SectionHeading>
+      <SectionHeading ><p className="text-[#20c300]">Contact Me</p></SectionHeading>
       <div className="grid md:grid-cols-2 gap-4 mb-8">
         {links.map((link, index) => (
           <div

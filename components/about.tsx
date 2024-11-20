@@ -12,17 +12,17 @@ export default function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="mb-28 text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 text-center leading-8 sm:mb-40 scroll-mt-28 text-[#20c300]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, duration: 0.6 }}
     >
       <SectionHeading>About Me</SectionHeading>
 
-      <div className="md:flex md:items-center md:justify-between gap-12 mt-10">
+      <div className="md:flex md:items-center md:justify-between gap-12 mt-10 ">
         {/* Text Content */}
         <motion.div
-          className="md:w-1/2 text-start space-y-6"
+          className="md:w-1/2 text-start space-y-6 text-[#20c300]"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.25, duration: 0.5 }}

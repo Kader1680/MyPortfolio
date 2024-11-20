@@ -149,13 +149,13 @@ const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="py-16 bg-red">
       <div className="  mx-auto px-6">
-        <h2 className="text-4xl font-bold text-[#009658] text-center mb-8">My Projects</h2>
+        <h2 className="text-4xl font-bold text-[#20c300] text-center mb-8">My Projects</h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="  rounded-lg shadow-lg overflow-hidden">
+            <div key={index} className=" bg-black  rounded-lg shadow-lg overflow-hidden">
               <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-[#20c300] mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
