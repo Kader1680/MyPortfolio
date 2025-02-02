@@ -67,7 +67,7 @@ export default function Intro() {
       <source src="/aze.mp4" type="video/mp4" />
       Your browser does not support the video tag.
       </video>
-
+{/* 
       <br></br>
       <br></br>
       <hr></hr>
@@ -127,7 +127,7 @@ export default function Intro() {
             <h1 style={{fontSize:"25px"}} className="text-[#20c300] bg-black p-2 rounded-lg  font-semibold text-lg">Sharing Ticks & Trips About Progamming</h1>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
