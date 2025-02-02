@@ -61,6 +61,13 @@ export default function Intro() {
           </motion.h1>
         </div>
       </div>
+
+
+      <video  style={{margin:"10px auto"}}  width="800" controls>
+      <source src="/aze.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+      </video>
+
       <br></br>
       <br></br>
       <hr></hr>
