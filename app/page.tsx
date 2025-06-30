@@ -6,12 +6,15 @@ import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Certification from "@/components/certafications";
+import ServicesSection from "@/components/services";
  
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
+      <ServicesSection />
+
       <About />
       <Experience />
       <Projects />
@@ -19,7 +22,6 @@ export default function Home() {
       <SectionDivider />
       <Certification />
       <Contact />
-      
     </main>
   );
 }
