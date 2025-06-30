@@ -43,20 +43,36 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+
   {
-    title: "Open Source Contributor",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
-    title: "Front-End Developer Fiverr Freelancer",
+    title: "Full Stack Developer",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022",
-  }
+    date: "2024",
+  },
+  {
+    title: "Backend Developer on Open Source Project",
+    description:
+      "I start Contributing in Open Source as backend specialize in laravel to solve issue & adding new feature also testing the code",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  },
+  {
+    title: "Junior Backend Developer",
+    description:
+      "I worked on build RESTFULL API and write the testing, docs. also start to make Unit Testing & feature testing , fixing bugs",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  },
+  {
+    title: "Front End Developer Freelancer AT Fiverr",
+    description:
+      "I build Landing Page Responsive desing, update some template & fix bug",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+
 ] as const;
 
 export const projectsData = [

@@ -21,7 +21,7 @@ export default function Intro() {
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
-        <div className="relative">
+        <div className=" flex relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -30,7 +30,7 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image style={{ width:"200px", height:"200px" }}
+            <Image style={{ width:"250px", height:"250px" }}
               src={p}
               alt="Abdelkader Ould Hennia"
               

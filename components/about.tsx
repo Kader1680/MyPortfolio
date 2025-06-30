@@ -19,9 +19,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      In this duration, I have learned a lot of technologies, created many cool websites, collaborated with great developers and contributed to open source projects.
-      As software Developer i had  experience with Laravel, React. Great understanding of OOP principles, Data Structures, Algorithms. Experience in responsive WEB development. Works with client-side and service-side. Experience with web systems running on various OS and browsers, including older versions. Strong understanding of CSS pre-processors (SASS / SCSS) and also building an API. 
-      So I'm always seeking to have an opportunity that matches my skills, to make the best use of all what I have learned.
+      I am Abdelkader, a software engineer specializing in backend development with the capability to handle front-end work when needed. I excel at solving complex problems, debugging, and writing secure, clean, and well-documented code. Adhering to SOLID principles, I take pride in delivering maintainable, high-quality solutions.
+<br></br>
+I am self-taught in computer science and have a solid understanding of essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
+<br></br>
+Beyond technical skills, I am a strong team player with excellent communication abilities. I work effectively within teams, ensuring that everyone is on the same page, and I thrive in environments where collaboration is key to success. I also place a significant emphasis on testing to ensure the reliability of the software I build.
       </p>
     </motion.section>
   );
