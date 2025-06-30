@@ -17,20 +17,9 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, duration: 0.6 }}
     >
-<<<<<<< HEAD
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-      I am Abdelkader, a software engineer specializing in backend development with the capability to handle front-end work when needed. I excel at solving complex problems, debugging, and writing secure, clean, and well-documented code. Adhering to SOLID principles, I take pride in delivering maintainable, high-quality solutions.
-<br></br>
-I am self-taught in computer science and have a solid understanding of essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
-<br></br>
-Beyond technical skills, I am a strong team player with excellent communication abilities. I work effectively within teams, ensuring that everyone is on the same page, and I thrive in environments where collaboration is key to success. I also place a significant emphasis on testing to ensure the reliability of the software I build.
-      </p>
-=======
       <SectionHeading>About Me</SectionHeading>
 
-      <div className="md:flex md:items-center md:justify-between gap-12 mt-10 ">
-        {/* Text Content */}
+      <div className="md:flex md:items-center md:justify-between gap-12 mt-10">
         <motion.div
           className="md:w-1/2 text-start space-y-6 text-[#20c300]"
           initial={{ opacity: 0, x: -50 }}
@@ -38,29 +27,16 @@ Beyond technical skills, I am a strong team player with excellent communication 
           transition={{ delay: 0.25, duration: 0.5 }}
         >
           <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
-            I am a software engineer specializing in backend development with
-            the capability to handle front-end work when needed. I excel at
-            solving complex problems, debugging, and writing secure, clean, and
-            well-documented code. Adhering to <strong>SOLID</strong> principles, I take pride in delivering maintainable, high-quality solutions.
+            I am Abdelkader, a software engineer specializing in backend development with the capability to handle front-end work when needed. I excel at solving complex problems, debugging, and writing secure, clean, and well-documented code. Adhering to <strong>SOLID</strong> principles, I take pride in delivering maintainable, high-quality solutions.
           </p>
-
           <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
-            Self-taught in computer science, I possess a solid understanding of
-            essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
+            I am self-taught in computer science and have a solid understanding of essential concepts like Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and security. My passion for open-source projects reflects my commitment to continuous learning and community collaboration.
           </p>
-
           <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
-            Beyond technical skills, I am a strong team player with excellent
-            communication abilities. I work effectively within teams, ensuring
-            smooth collaboration. I place significant emphasis on testing to ensure the reliability of the software I build.
-          </p>
-
-          <p className="text-gray-600 dark:text-gray-300 text-lg leading-7">
-            I am always seeking opportunities that align with my skills to make the best use of everything I’ve learned.
+            Beyond technical skills, I am a strong team player with excellent communication abilities. I work effectively within teams, ensuring smooth collaboration. I also place a significant emphasis on testing to ensure the reliability of the software I build.
           </p>
         </motion.div>
 
-        {/* Image */}
         <motion.div
           className="md:w-1/2 mt-8 md:mt-0"
           initial={{ opacity: 0, x: 50 }}
@@ -76,7 +52,6 @@ Beyond technical skills, I am a strong team player with excellent communication 
           />
         </motion.div>
       </div>
->>>>>>> 6626c6c5a7aa57d123eaa8cdee6735a149727dc2
     </motion.section>
   );
 }
