@@ -7,6 +7,7 @@ import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Certification from "@/components/certafications";
 import ServicesSection from "@/components/services";
+import ReviewsSection from "@/components/ReviewsSection";
  
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       <Intro />
       <ServicesSection />
-
+    <ReviewsSection />
       <About />
       <Experience />
       <Projects />

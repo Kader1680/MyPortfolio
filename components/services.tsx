@@ -25,13 +25,8 @@ const services: Service[] = [
     fiverrUrl: "https://www.fiverr.com/ouldhenniaabdel/build-full-website-application-with-laravel-and-php",
     price: "$30+",
   },
-  // {
-  //   title: "Deploy Your Web Application",
-  //   description: "Deploy your app to production using Docker, cPanel, Vercel, or other platforms. Secure and optimized delivery.",
-  //   imageUrl: "/configure-your-vps-server-deploy-projects.png",
-  //   fiverrUrl: "https://www.fiverr.com/your_deployment_service_link",
-  //   price: "$50+",
-  // },
+
+  
   {
     title: "Landing Page or Portfolio",
     description: "Responsive and attractive landing pages or portfolio websites tailored to your brand.",
