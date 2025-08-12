@@ -21,7 +21,7 @@ export default function Contact() {
     },
     
     {
-      href: "https://www.fiverr.com/ouldhenniaabdel?up_rollout=true",
+      href: "https://www.fiverr.com/s/rE1QP97",
       label: "Fiverr",
     },
     {
@@ -32,7 +32,7 @@ export default function Contact() {
 
   const followLinks = [
     {
-      href: "https://www.youtube.com/@Bloomaster1792",
+      href: "https://www.youtube.com/@Jeolardo1972",
       label: "YouTube",
     },
     {
@@ -40,7 +40,7 @@ export default function Contact() {
       label: "GitHub",
     },
     {
-      href: "https://dev.to/clever",
+      href: "https://dev.to/kader1680",
       label: "DEVTo",
     },
   ];
