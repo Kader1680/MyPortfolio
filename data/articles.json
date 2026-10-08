@@ -1,38 +1,14 @@
 [
   {
-    "title": "Understanding PostgreSQL Indexes",
+    "title": "Why You Should Stop Using SELECT * in Production SQL",
     "date": "2026-09-01",
-    "category": "postgresql",
-    "link": "https://example.com/postgresql-indexes"
-  },
-  {
-    "title": "How Microservices Communicate",
-    "date": "2026-08-20",
-    "category": "microservices",
-    "link": "https://example.com/microservices-communication"
-  },
-  {
-    "title": "Designing a Scalable Backend",
-    "date": "2026-08-10",
-    "category": "backend",
-    "link": "https://example.com/scalable-backend"
-  },
-  {
-    "title": "Database Internals Explained",
-    "date": "2026-07-28",
     "category": "databases",
-    "link": "https://example.com/database-internals"
+    "link": "https://medium.com/@abdelkaderoh/why-you-should-stop-using-select-in-production-sql-63bfb628a9c8"
   },
   {
-    "title": "PostgreSQL Query Planning",
-    "date": "2026-07-15",
-    "category": "postgresql",
-    "link": "https://example.com/postgresql-query-planning"
-  },
-  {
-    "title": "Building Resilient Microservices",
-    "date": "2026-07-01",
-    "category": "microservices",
-    "link": "https://example.com/resilient-microservices"
+    "title": "Database Normalization vs. Denormalization: When to Use Which",
+    "date": "2026-08-20",
+    "category": "databases",
+    "link": "https://medium.com/@abdelkaderoh/database-normalization-vs-denormalization-when-to-use-which-44d1fb3adfa6"
   }
 ]
