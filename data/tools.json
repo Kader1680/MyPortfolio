@@ -1,12 +1,18 @@
 [
   "Go",
-  "Python",
   "JavaScript",
+  "PHP",
+  "Express.js",
+  "Laravel",
   "Node.js",
   "Next.js",
   "PostgreSQL",
+  "Mysql",
   "Redis",
   "Docker",
-  "Kubernetes",
-  "AWS"
+  "Nginx",
+  "AWS",
+  "NestJS",
+  "React js",
+  "Next js"
 ]

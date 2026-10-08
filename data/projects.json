@@ -1,17 +1,17 @@
 [
   {
-    "name": "Project One",
-    "description": "A short description of what this project does and why you built it.",
-    "link": "https://github.com/yourhandle/project-one"
+    "name": "Shortly URL Shortener (Express + PostgreSQL + Next.js)",
+    "description": "I built this as a complete, production-style example of a small backend service: a REST API with real authentication, a normalized PostgreSQL schema, rate limiting, and a thin Next.js frontend that consumes the API like any other client would. There's no ORM magic hiding what's going on — the data layer is plain SQL through pg, so it's easy to read exactly what every endpoint does to the database.",
+    "link": "https://github.com/Kader1680/url-shortener"
   },
   {
-    "name": "Project Two",
-    "description": "A short description of what this project does and why you built it.",
-    "link": "https://github.com/yourhandle/project-two"
+    "name": "Pimpcom E-Commerce (Next.js + NestJS + PostgreSQL)",
+    "description": "",
+    "link": "https://github.com/Kader1680/Pimpcom"
   },
   {
-    "name": "Project Three",
-    "description": "A short description of what this project does and why you built it.",
-    "link": "https://github.com/yourhandle/project-three"
+    "name": "Yamli Social Media App (Node.js + Express + MYSQL + Vue.js)",
+    "description": "A full-stack social media application built using Node.js, Express, MYSQL, and Vue.js. This app allows users to register, log in, create posts (text/images), like and comment, follow/unfollow users, and more..",
+    "link": "https://github.com/Kader1680/Yamli"
   }
 ]

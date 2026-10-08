@@ -4,5 +4,6 @@
   "Debugging and fixing broken APIs",
   "Scaling backend services",
   "Writing clean, maintainable code",
-  "Mentoring engineers"
+  "Writing unit and integration tests",
+  "Writing documentation"
 ]
