@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Project One",
+    "description": "A short description of what this project does and why you built it.",
+    "link": "https://github.com/yourhandle/project-one"
+  },
+  {
+    "name": "Project Two",
+    "description": "A short description of what this project does and why you built it.",
+    "link": "https://github.com/yourhandle/project-two"
+  },
+  {
+    "name": "Project Three",
+    "description": "A short description of what this project does and why you built it.",
+    "link": "https://github.com/yourhandle/project-three"
+  }
+]

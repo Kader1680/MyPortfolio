@@ -1,0 +1,19 @@
+[
+ 
+  {
+    "type": "freelance",
+    "company": "Freelance",
+    "title": "Backend Developer",
+    "description": "Built and maintained backend systems and APIs for various clients on a project basis.",
+    "startDate": "Jun 2021",
+    "endDate": "Present"
+  },
+   {
+    "type": "company",
+    "company": "Company X",
+    "title": "Backend Engineer",
+    "description": "Designed and built backend services, worked on database architecture, and fixed production issues.",
+    "startDate": "Jan 2024",
+    "endDate": "Sep 2024"
+  }
+]

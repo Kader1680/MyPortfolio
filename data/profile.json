@@ -1,0 +1,13 @@
+{
+  "name": "Abdelkader Ould Hennia",
+  "tagline": "engineering, databases, and systems. always building.",
+  "about": "I am a Backend Engineer who thrives on technical autonomy and performance engineering. Over the past two years, I have focused heavily on the mechanics of backend infrastructure—specifically optimizing relational database queries (PostgreSQL/MySQL), designing asynchronous event-driven architectures (Redis Pub/Sub), and building fault-tolerant APIs.  What sets me apart is my approach to problem-solving: I don't just write functional code; I benchmark it under load, analyze execution plans, and ensure systems remain reliable under high traffic. Whether working with Go, Node.js, or containerized Docker environments, I take full ownership of the lifecycle from architectural design to deployment, I work remotely, take a piece end-to-end, and prefer decisions written down to decisions remembered. Growing toward a Backend Engineer.",
+  "photo": "/profile.png",
+  "socials": {
+    "youtube": "https://www.youtube.com/@Jeolardo1972",
+    "twitter": "https://x.com/Kader_1680",
+    "linkedin": "https://www.linkedin.com/in/abdeloh/",
+    "github": "https://github.com/Kader1680",
+    "medium": "https://medium.com/@abdelkaderoh"
+  }
+}

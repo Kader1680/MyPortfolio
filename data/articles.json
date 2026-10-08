@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Understanding PostgreSQL Indexes",
+    "date": "2026-09-01",
+    "category": "postgresql",
+    "link": "https://example.com/postgresql-indexes"
+  },
+  {
+    "title": "How Microservices Communicate",
+    "date": "2026-08-20",
+    "category": "microservices",
+    "link": "https://example.com/microservices-communication"
+  },
+  {
+    "title": "Designing a Scalable Backend",
+    "date": "2026-08-10",
+    "category": "backend",
+    "link": "https://example.com/scalable-backend"
+  },
+  {
+    "title": "Database Internals Explained",
+    "date": "2026-07-28",
+    "category": "databases",
+    "link": "https://example.com/database-internals"
+  },
+  {
+    "title": "PostgreSQL Query Planning",
+    "date": "2026-07-15",
+    "category": "postgresql",
+    "link": "https://example.com/postgresql-query-planning"
+  },
+  {
+    "title": "Building Resilient Microservices",
+    "date": "2026-07-01",
+    "category": "microservices",
+    "link": "https://example.com/resilient-microservices"
+  }
+]
