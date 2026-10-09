@@ -38,6 +38,15 @@ export default function Home() {
             <a href={p.link} target="_blank" rel="noopener noreferrer">View Project →</a>
           </div>
         ))}
+
+         <a
+          href={profile.socials.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="yt-btn"
+        >
+          See All Projects On Github →
+        </a>
       </section>
 
       <section id="articles">
