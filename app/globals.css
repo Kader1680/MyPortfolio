@@ -148,6 +148,20 @@ footer.site-footer {
 }
 
 @media (max-width: 600px) {
+  header.site-header .container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  header.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 6px;
+  }
+  header.site-header nav a {
+    margin-left: 0;
+  }
   .video-grid {
     grid-template-columns: 1fr;
   }

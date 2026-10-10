@@ -12,8 +12,8 @@ export default function RootLayout({ children }) {
       <body>
         <header className="site-header">
           <div className="container">
-            <a href="/" className="name-logo">
-              {profile.name}
+            <a href="/" className="name-logo sm:text-center">
+              Abdelkader 
             </a>
             <nav>
               <a href="#projects">Projects</a>
